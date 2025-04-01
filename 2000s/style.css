@@ -1,27 +1,67 @@
 /* This is a CSS override! It overrides default values for ALL elements. */
 /* I highly recommend keeping this override in your code. */
 * {
-	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-}
-
-body {
-	background-color: yellow;
-	font-family: sans-serif;
+	border-radius: 16%;
+  }
+  
+  body {
+	background-image: url('https://i.pinimg.com/736x/5d/a5/f5/5da5f5a5e7211d499dd9644ca4193b72.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 10px;
+	padding: 10px;
+ 	font-family: monospace;
+	text-align: center;
 }
 h1 {
 	margin: 20px;
-}
-h2 {
-	margin: 20px;
+	background: rgba(142, 227, 255, 0.65);
+	border: 2px dashed #fff;
+	backdrop-filter: blur(5px);
+	padding: 12px;
+	margin: 20px auto;
+	color:aliceblue;
+	border-radius: 12px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-size: 36px;
 }
 p {
 	margin: 20px;
+	background-image: url('https://i.pinimg.com/originals/c3/e9/50/c3e95034e5e0da0e6257c78e757da8fa.gif');
+	background-size: cover;             
+	background-repeat: no-repeat; 
+	background-position: center;  
+	margin: 20px auto;
+	color:aliceblue;
+	border-radius: 0;
+	border-style: solid;
+	border-width: 10px;
+	border-color: grey;
+	padding: 24px ;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	font-size: 36px;
 }
-ul {
-	margin: 20px;
+nav {
+	background: rgba(255, 142, 242, 0.65);
+	border: 2px dashed #fff;
+	backdrop-filter: blur(5px);
+	padding: 12px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px #fff;
+	margin: 20px auto;
 }
-li {
-	margin: 20px;
+
+nav a {
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px 15px;
+	margin: 5px;
+	border: 1px solid #fff;
+	border-radius: 12px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
