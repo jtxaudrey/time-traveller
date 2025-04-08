@@ -5,19 +5,67 @@
 	padding: 0;
 	margin: 0;
 }
-
-@font-face {
-	font-family: "Limkin";
-	src: url("assets/TMT-LimkinVF.ttf");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	padding: 20px;
+	gap: 10px;
+	background-color: rgba(245, 245, 245, 0.6);
+	backdrop-filter: blur(10px);
+	font-family: "Assistant", sans-serif;
+	font-weight: 200;
+	}
+.nav-link:hover {
+	color: #7f7f7f;
+	}
+nav a {
+	text-decoration: none;     
+	color: black;                    
+  }
+  nav a:hover {
+	color: #7f7f7f;              
+  }
+  nav a:visited {
+	color: black;              
+  }
+	.nav-spacer {
+	flex-grow: 1;
+	}
 body {
-	font-family: "Limkin", serif;
-	font-variation-settings: "wght" 500, "SRFF" 100;
-	background: radial-gradient(circle, rgba(243,168,221,1) 0%, rgba(152,219,107,1) 20%, rgba(90,222,232,1) 40%, rgba(253,192,58,1) 60%, rgba(166,144,252,1) 80%, rgba(255,115,77,1) 100%);
+	font-family: "Montserrat", sans-serif;
+	font-variation-settings: "wght" 200;
+	background: rgb(250,255,236);
+	background: radial-gradient(circle, rgba(250,255,236,1) 0%, rgba(247,239,243,1) 56%, rgba(213,221,231,1) 100%);
 	background-size: 100vw 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+	padding: 20px;
 }
 
+button{
+	display: flex;
+	padding: 20px 60px;
+	border-radius: 12px;
+	border: 0;
+	background-color: rgba(249, 249, 249, 0.2);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	color: rgb(144, 111, 132);
+	font-family: 36px "Assistant", sans-serif;
+	font-weight: 500;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+}
 .hidden {
 	display: none;
 }
@@ -32,6 +80,7 @@ p {
 	margin: 20px;
 }
 ul {
+	text-align: left;
 	margin: 20px;
 }
 li {
