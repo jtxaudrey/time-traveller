@@ -8,9 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
 .nav {
 	position: fixed;
+	margin: 10px;
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 4%;
+	right: 4%;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(183, 183, 183, 0.094);
 	display: flex;
 	padding: 20px;
 	gap: 10px;
@@ -39,7 +42,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-variation-settings: "wght" 200;
 	background: rgb(250,255,236);
-	background: radial-gradient(circle, rgba(250,255,236,1) 0%, rgba(247,239,243,1) 56%, rgba(213,221,231,1) 100%);
+	background: radial-gradient(circle, rgb(245, 252, 225) 0%, rgba(247,239,243,1) 56%, rgb(147, 212, 255) 100%);
 	background-size: 100vw 100vh;
 	display: flex;
 	align-items: center;
@@ -59,7 +62,7 @@ button{
 	border: 0;
 	background-color: rgba(249, 249, 249, 0.2);
 	backdrop-filter: blur(10px);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 8px 20px rgba(103, 103, 103, 0.15);
 	color: rgb(144, 111, 132);
 	font-family: 36px "Assistant", sans-serif;
 	font-weight: 500;
