@@ -3,7 +3,7 @@
 * {
 	padding: 0;
 	margin: 0;
-	border-radius: 16%;
+	box-sizing: border-box;
   }
   
   body {
@@ -16,6 +16,7 @@
 	padding: 10px;
  	font-family: monospace;
 	text-align: center;
+	margin: 0 auto;
 }
 h1 {
 	margin: 20px;
@@ -44,6 +45,7 @@ p {
 	padding: 24px ;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 	font-size: 36px;
+	display: block;
 }
 nav {
 	background: rgba(255, 142, 242, 0.65);
