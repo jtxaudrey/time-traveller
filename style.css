@@ -1,0 +1,52 @@
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+.nav {
+	font-family: "Assistant", sans-serif;
+	font-weight: 200;
+	}
+.nav:hover {
+	color: #7f7f7f;
+}
+.nav-link:hover {
+	color: #7f7f7f;
+	}
+nav a {
+	text-decoration: none;     
+	color: black;                    
+  }
+nav a:hover {
+	color: #7f7f7f;              
+  }
+nav a:visited {
+	color: black;              
+  }
+.nav-spacer {
+	flex-grow: 1;
+	}
+body {
+	font-family: "Montserrat", sans-serif;
+	font-variation-settings: "wght" 200;
+	background: rgb(250,255,236);
+	background: radial-gradient(circle, rgb(245, 252, 225) 0%, rgb(244, 247, 239) 56%, rgb(212, 203, 255) 100%);
+	background-size: 100vw 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: safe center;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+	padding: 20px;
+	z-index:10
+}
+
+
+.hidden {
+	display: none;
+}
