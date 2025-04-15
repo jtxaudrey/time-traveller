@@ -19,39 +19,101 @@
 
 	<h1>Welcome to the 2010s!</h1>
 
-	<button onclick="toggleContent();">The 2010s? What’s that like?</button>
+	<button id="mainButton"onclick="toggleContent();" >The 2010s? What’s that like?</button>
 
-	<div id="content" class="hidden">
-		<p>
-			This is an era where the Internet becomes everything. It takes on new functions and allows layouts that appease our every want and need. Perhaps by now, we’ve had <em>too</em> much Internet.
-		</p>
+	<div id="content" class="hidden" style="width: 60%; height: 40%;">
+		<div style="display: flex; justify-content: center; align-items: center;">
+			<button class=button2 onclick="toggleMore()">A Brief History of Web Design</button>
+		</div>
+		<div id="moreContent" class="hidden">
+			<div class="panel-child">
+				<div class="content">
+					<div class="inner-panel">
+						<p>
+							Instead of debating whether designers should learn code or developers should learn design, let’s set some common ground on how design for the web evolved and how we could bridge the gap between code and design.
+						</p>
+					</div>
+					<div class="inner-panel">
+						<div class="title">
+							<p><b>1989: The dark ages of web design</b></p>
+						</div>
+						<div class="scroll-content">
+							<p>
+								The very beginning of web design was pretty dark, as screens were literally black and only few monochrome pixels lived therein.
 
-		<p>
-			Here’s what sites have now:
-		</p>
-
-		<ul>
-			<li>Advanced layouts using <a href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/" target="_blank">flexbox</a> and <a href="https://www.joshwcomeau.com/css/interactive-guide-to-grid/" target="_blank">CSS grid</a>.</li>
-			<li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media queries</a> that let us create responsive mobile layouts.</li>
-			<li><a href="https://www.w3schools.com/cssref/atrule_font-face.php" target="_blank">Custom fonts.</a></li>
-			<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings" target="_blank">Variable fonts!.</a></li>
-			<li>All the wonders that JavaScript brings.</li>
-		</ul>
-
-		<p>
-			For this version of the site, <em>you may NOT use absolute positioning!</em>
-		</p>
-
-		<p>
-			If flexbox is confusing, try playing <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>. If CSS Grid is confusing, try playing <a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a>.
-		</p>
-
-		<h2>Examples of sites that are evocative this era:</h2>
-		<ul>
-			<li><a href="https://www.apple.com/" target="_blank">Apple</a></li>
-			<li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
-			<li><a href="https://www.nytimes.com/" target="_blank">New York Times</a></li>
-		</ul>
+								Design was made by symbols and tabulation (Tab key). So let’s fast forward to the time when Graphic User Interface was the main way of surfing the web – the Wild West era of tables.
+							</p>
+						</div>
+					</div>
+					<div class="inner-panel">
+						<div class="title">
+							<p><b>1995: The beginning of tables</b></p>
+						</div>
+						<div class="scroll-content">
+							<p>
+								The birth of browsers that could display images was the first step into web design as we know it. The closest option available to structure information was the concept of tables already existing in HTML. So putting tables within tables, figuring out clever ways to mix static cells with fluid cells was the thing, started by David’s Siegel’s book “Creating Killer Sites”. Though it didn’t feel totally right, since the main purpose of a table is to structure numbers, it was still the common method to design the web for quite some time. The other problem was the difficulty to maintain these fragile structures. This is also the time when the term “slicing designs” became popular. Designers would make a fancy layout, but it was up to developers to break it into small pieces and figure out the best way to make that design work. On the other hand, tables had some awesome features, like the ability to align things vertically, be defined in pixels or in percentages. The main benefit was that it was the closest to a grid we could get back then. It was also the time when so many developers decided not to like front-end coding.							</p>
+						</div>
+					</div>
+					<div class="inner-panel">
+						<div class="title">
+							<p><b>1995: JavaScript comes to the rescue</b></p>
+						</div>
+						<div class="scroll-content">
+							<p>
+								JavaScript was the answer to the limitations of HTML. For instance, need a pop-up window, want to dynamically modify the order of something? The answer was JavaScript. However, the main problem here is that JavaScript is layered on top of the fabric that makes the web work and has to be loaded separately. Very often, it is used as an easy patch for a lazy developer, yet it is very powerful if used wisely. Nowadays we prefer to avoid JavaScript, if the same feature can be delivered using CSS. Yet JavaScript itself stays strong as in front-end (jQuery), as on the back-end (Node.js).							
+							</p>
+						</div>
+					</div>
+					<div class="inner-panel">
+						<div class="title">
+							<p><b>1996: Flash – The golden era of freedom</b></p>
+						</div>
+						<div class="scroll-content">
+							<p>
+								To break the limitations of existing web design, a technology was born that promised a freedom never seen before. The designer could design any shapes, layouts, animations, interactions, use any font and all this in one tool – Flash. The end-result is packed as one file and then sent to the browser to be displayed. That is, as long as a user had the latest Flash plugin and some free time to wait until it loads, it worked like magic. This was the golden era for splash pages, intro animations, all kinds of interactive effects. Unfortunately, it wasn’t too open or search-friendly and certainly consumed a lot of processing power. When Apple decided to abandon it on their first iPhone (2007), Flash started to decay. At least for web design.							</p>
+						</div>
+					</div>
+					<div class="inner-panel">
+						<div class="title">
+							<p><b>2007: Mobile uprising – Grids and frameworks</b></p>
+						</div>
+						<div class="scroll-content">
+							<p>
+								Browsing the web on mobile phones was a whole challenge in itself. Besides all the different layouts for devices, it introduced content-parity problems. Should the design be the same on the tiny screen or should it be stripped down? Where to put all the nice, blinking ads on that tiny screen? Speed was also an issue, as loading a lot of content burns your internet money pretty fast. The first step to improvement was an idea of column grids. After a few iterations, the 960 grid system won, and the 12-column division became something designers were using every day. The next step was standardising the commonly used elements like forms, navigation, buttons, and to pack them in an easy, reusable way. Basically, making a library of visual elements that contains all the code in it. The winners here are Bootstrap and Foundation, which is also related to the fact that line between a website and an app is fading. The downside is that designs often look the same and designers still can’t access them without knowing how the code works.							</p>
+						</div>
+					</div>
+					<div class="inner-panel">
+							<div class="title">
+								<p><b>2010: Responsive web design</b></p>
+							</div>
+							<div class="scroll-content">
+								<p>
+									A brilliant guy named Ethan Marcotte decided to challenge the existing approach by proposing to use the same content, but different layouts for the design, and coined the term “responsive web design”. Technically, we still use HTML and CSS, so it is rather a conceptual advancement. Yet there are lot of misconceptions here. For a designer, responsive means mocking up multiple layouts. For the client, it means it works on the phone. For a developer, it is the way how images are served, download speeds, semantics, mobile/desktop first and more. The main benefit here is the content parity, meaning that it’s the same website that works everywhere. Hope we can agree on that, at the least.								</p>
+							</div>
+					</div>
+					<div class="inner-panel">
+							<div class="title">
+								<p><b>2010: The times of the flat</b></p>
+							</div>
+							<div class="scroll-content">
+								<p>
+									Designing more layouts takes more time, so luckily we decided to streamline the process by ditching fancy shadow effects and getting back to the roots of design by prioritising the content. Fine photography, typography, sharp illustrations and thoughtful layouts is how we design now. Simplifying visual elements – or so called “flat design” – is also part of the process. The main benefit here is that much more thought is being put into copy, into hierarchy of the message and content in general. Glossy buttons are replaced by icons and that allows us to use vector images and icon fonts. Web fonts deliver beautiful typography. The funny thing is, the web was close to this from the very beginning. But well, that’s what the young years are for.
+								</p>							
+							</div>
+					</div>
+					<div class="inner-panel">
+							<div class="title">
+								<p><b>2014: The bright future</b></p>
+							</div>
+							<div class="scroll-content">
+								<p>
+									The holy grail of web design has been to actually make it visual and bring it into the browser. Imagine that designers simply move things around the screen and a clean code comes out! And I don’t mean changing the order of things, but having full flexibility and control! Imagine that developers don’t have to worry about browser compatibility and can focus on actual problem solving! Technically, there are a few new concepts that support the move into that direction. New units in CSS like vh, vw (viewport height and width) allow much greater flexibility to position elements. It will also solve the problem that has puzzled so many designers – why centring something vertically in CSS is such a pain. Flexbox is another cool concept which is a part of CSS. It allows to create layouts and modify them with a single property instead of writing lot of code. And finally, web components is an even bigger take. It is a set of elements bundled together, i.e. a gallery, signup form etc. That introduces an easier workflow, where elements become building blocks that can be reused and updated separately.								</p>
+					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="script.js"></script>
